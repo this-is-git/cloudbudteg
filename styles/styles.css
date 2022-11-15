@@ -51,6 +51,10 @@ body {
   background-color: pink;
 }
 
+body.scrol-lock {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -118,6 +122,10 @@ body {
   line-height: 1.21;
   text-transform: uppercase;
   cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  color: #fff;
 }
 
 .header-authorisation-item:not(:last-child) {
@@ -221,6 +229,7 @@ body {
 
 .management-video {
   margin-left: 105px;
+  position: relative;
 }
 .management-btn {
   cursor: pointer;
@@ -232,6 +241,10 @@ body {
   align-items: center;
   justify-content: center;
   color: #fff;
+  position: absolute;
+  left: 0;
+  transform: translate(-50%, -50%);
+  top: 50%;
 }
 
 .btn-icon {
@@ -259,6 +272,50 @@ body {
   display: flex;
 }
 
+.features-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.feauters-overlay {
+  background-color: rgba(138, 138, 138, 0.62);
+  padding: 42px 24px 32px 24px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  color: var(--add-title-color);
+  transform: translateY(100%);
+  transition: 250ms linear transform;
+}
+
+.features-item:hover .feauters-overlay {
+  transform: translateY(0%);
+}
+
+.feauters-overlay__title {
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.feauters-overlay__descr {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.feauters-overlay__link {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--hero-btn-color);
+  max-width: 100px;
+  margin: 0 auto;
+}
+
 .features-item:not(:last-child) {
   margin-right: 60px;
 }
@@ -277,12 +334,34 @@ body {
 }
 
 .technology-list {
+  counter-reset: section;
   display: flex;
   text-align: center;
 }
 
 .technology-list__item {
   max-width: 255px;
+  position: relative;
+  height: 226px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.technology-list__item:before {
+  counter-increment: section;
+  content: '0' counter(section);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.2;
+  height: 120px;
+  color: rgba(16, 16, 16, 0.08);
+  display: block;
 }
 
 .technology-list__item:not(:last-child) {
@@ -383,4 +462,42 @@ body {
 .footer-contacts-list {
   color: var(--title-color);
   font-style: normal;
+}
+
+/* modal */
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 250ms linear, opacity 250ms linear;
+}
+
+.modal {
+  position: absolute;
+  min-width: 528px;
+  min-height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: #fff;
+  transition: transform 250ms linear;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.6);
+}
+
+.button-close {
+  margin-left: auto;
 }
