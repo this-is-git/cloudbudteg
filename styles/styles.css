@@ -486,6 +486,7 @@ body.scrol-lock {
   transform: translate(-50%, -50%) scale(1);
   background-color: #fff;
   transition: transform 250ms linear;
+  padding: 40px;
 }
 
 .backdrop.is-hidden {
@@ -499,5 +500,92 @@ body.scrol-lock {
 }
 
 .button-close {
-  margin-left: auto;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.form {
+  color: #000;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.label-name {
+  margin-bottom: 4px;
+}
+
+.form__input {
+  padding: 11px 10px 11px 30px;
+  border: 1px solid red;
+  transition: border-color 250ms linear;
+}
+
+input {
+  outline: 1px solid transparent;
+}
+
+.form__input:hover,
+.form__input:focus {
+  border-color: #4ced51;
+}
+
+.form__input:hover + .form-icon,
+.form__input:focus + .form-icon {
+  fill: #4ced51;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transition: fill 250ms linear;
+}
+
+.form-textarea {
+  resize: none;
+  height: 120px;
+}
+
+.input-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-checkbox:checked + .label-checkbox .checkbox-custom {
+  background-color: blue;
+  border-color: transparent;
+}
+
+.label-checkbox {
+  display: flex;
+}
+
+.checkbox {
+  fill: #fff;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  margin-right: 15px;
+  transition: border-color 250ms linear, background-color 250ms linear;
 }
