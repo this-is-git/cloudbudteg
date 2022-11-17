@@ -1,0 +1,411 @@
+/*Roots*/
+@import './base/normalize';
+@import './base/resset';
+
+@import './utils/vars';
+
+@import './base/common';
+@import './components/header';
+@import './components/hero';
+
+/*Global styles*/
+
+/*Header section*/
+
+/*Management section*/
+.management {
+  padding-top: 107px;
+  padding-bottom: 82px;
+}
+
+.management__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.management__content {
+  max-width: 445px;
+}
+
+.management__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.19;
+  color: var(--title-color);
+  margin-bottom: 24px;
+}
+.management__description {
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--title-color);
+  margin-bottom: 20px;
+}
+.management__link {
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--hero-btn-color);
+}
+
+.management__video {
+  margin-left: 105px;
+  position: relative;
+}
+.management-btn {
+  cursor: pointer;
+  background-color: var(--hero-btn-color);
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.management-btn__icon {
+  fill: currentColor;
+}
+
+.management-btn:hover,
+.management-btn:focus {
+  background-color: var(--accent-color);
+  color: #ed4c5c;
+}
+/*Features section*/
+
+.features {
+  padding-top: 60px;
+  padding-bottom: 130px;
+}
+
+.features__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.features-list {
+  display: flex;
+  gap: 60px;
+}
+
+.features-list__item {
+  position: relative;
+  overflow: hidden;
+}
+
+.features-overlay {
+  background-color: rgba(138, 138, 138, 0.62);
+  padding: 42px 24px 32px 24px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  color: var(--add-title-color);
+  transform: translateY(100%);
+  transition: 250ms linear transform;
+}
+
+.features-list__item:hover .features-overlay {
+  transform: translateY(0%);
+}
+
+.features-overlay__title {
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.features-overlay__descr {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.features-overlay__link {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--hero-btn-color);
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+/* technology */
+
+.technology {
+  padding-top: 85px;
+  padding-bottom: 100px;
+  background-color: orange;
+}
+
+.technology__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.technology-list {
+  counter-reset: section;
+  display: flex;
+  text-align: center;
+}
+
+.technology-list__item {
+  max-width: 255px;
+  position: relative;
+  height: 226px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.technology-list__item:before {
+  counter-increment: section;
+  content: '0' counter(section);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.2;
+  height: 120px;
+  color: rgba(16, 16, 16, 0.08);
+  display: block;
+}
+
+.technology-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.technology-list__title {
+  margin-bottom: 10px;
+}
+
+/* focused */
+
+.focused {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  background-color: var(--hero-btn-color);
+}
+
+.focused__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.focused__content {
+  max-width: 445px;
+  margin-right: 85px;
+}
+
+.focused__title {
+  margin-bottom: 24px;
+}
+
+.focused__descr {
+  margin-bottom: 40px;
+}
+
+.focused-list {
+  display: flex;
+}
+
+.focused-list__item:not(:last-child) {
+  margin-right: 20px;
+}
+/*Footer*/
+.footer {
+  padding: 85px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.contacts {
+  margin-bottom: 20px;
+}
+
+.footer__subtitle {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.adress__inner {
+  max-width: 200px;
+}
+
+/*Address*/
+.address__address {
+  font-style: normal;
+  color: var(--title-color);
+  font-size: 12px;
+  line-height: 1.5;
+}
+/*Services*/
+
+.footer-menu__link {
+  color: var(--title-color);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.footer-menu__link:hover,
+.footer-menu__link:focus {
+  text-decoration: underline;
+}
+
+/*Get in touch*/
+.contacts-list {
+  color: var(--title-color);
+  font-style: normal;
+}
+
+/* modal */
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 250ms linear, opacity 250ms linear;
+}
+
+.modal {
+  position: absolute;
+  min-width: 528px;
+  min-height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: #fff;
+  transition: transform 250ms linear;
+  padding: 40px;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.6);
+}
+
+.button-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.form {
+  color: #000;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.label-name {
+  margin-bottom: 4px;
+}
+
+.form__input {
+  padding: 11px 10px 11px 30px;
+  border: 1px solid red;
+  transition: border-color 250ms linear;
+}
+
+input {
+  outline: 1px solid transparent;
+}
+
+.form__input:hover,
+.form__input:focus {
+  border-color: #4ced51;
+}
+
+.form__input:hover + .form-icon,
+.form__input:focus + .form-icon {
+  fill: #4ced51;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transition: fill 250ms linear;
+}
+
+.form-textarea {
+  resize: none;
+  height: 120px;
+}
+
+.input-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-checkbox:checked + .label-checkbox .checkbox-custom {
+  background-color: blue;
+  border-color: transparent;
+}
+
+.label-checkbox {
+  display: flex;
+}
+
+.checkbox {
+  fill: #fff;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  margin-right: 15px;
+  transition: border-color 250ms linear, background-color 250ms linear;
+}

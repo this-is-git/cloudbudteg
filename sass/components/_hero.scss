@@ -1,0 +1,42 @@
+.hero {
+  min-height: calc(100vh - 100px);
+  padding: 140px;
+  padding-bottom: 187px;
+  background-position: center 60%;
+}
+
+.hero__title {
+  font-size: 72px;
+  line-height: 1.19;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero__description {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  max-width: 540px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.hero__btn {
+  margin: 0 auto;
+  display: block;
+  font-family: 'Lato';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-transform: uppercase;
+  color: var(--hero-btn-color);
+  background-color: var(--main-color);
+  &:hover,
+  &:focus {
+    color: var(--main-color);
+    background-color: var(--hero-btn-color);
+    font-weight: 700;
+  }
+}

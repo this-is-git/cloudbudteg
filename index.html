@@ -18,44 +18,44 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Header-->
     <header class="header">
-      <div class="container header-wrapper">
-        <a class="logo link" href="./index.html">
-          <svg class="logo-icon" width="29" height="29">
-            <use href="./images/symbol-defs.svg#icon-logo"></use>
+      <div class="container header__wrapper">
+        <a class="logo header__logo" href="./index.html">
+          <svg class="logo__icon" width="29" height="29">
+            <use class="logo__symbol" href="./images/symbol-defs.svg#icon-logo"></use>
           </svg>
           cloudbudget
         </a>
 
         <nav class="header-nav">
-          <ul class="header-menu list">
-            <li class="header-menu-item">
-              <a class="header-menu-link link" href="">Overview</a>
+          <ul class="menu-navigations header-nav__menu">
+            <li class="menu-navigations__item">
+              <a class="menu-navigations__link" href="">Overview</a>
             </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link link" href="">Features</a>
+            <li class="menu-navigations__item">
+              <a class="menu-navigations__link" href="">Features</a>
             </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link link" href="">Technology</a>
+            <li class="menu-navigations__item">
+              <a class="menu-navigations__link" href="">Technology</a>
             </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link link" href="">Contact</a>
+            <li class="menu-navigations__item">
+              <a class="menu-navigations__link" href="">Contact</a>
             </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link link" href="">About</a>
+            <li class="menu-navigations__item">
+              <a class="menu-navigations__link" href="">About</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-authorisation list">
-          <li class="header-authorisation-item">
-            <button class="header-authorisation-btn" type="button">Sign up</button>
+        <ul class="header-authorisation">
+          <li class="header-authorisation__item">
+            <button class="header-authorisation__btn main-button" type="button">Sign up</button>
           </li>
-          <li class="header-authorisation-item">
-            <button class="header-authorisation-btn" type="button">Sign in</button>
+          <li class="header-authorisation__item">
+            <button class="header-authorisation__btn main-button" type="button">Sign in</button>
           </li>
         </ul>
       </div>
@@ -64,38 +64,36 @@
       <!--Hero section-->
       <section class="hero">
         <div class="container">
-          <div>
-            <h1 class="hero-title">Cloudbudget</h1>
-            <p class="hero-description">
-              Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of Up to
-              €4.99
-            </p>
-            <button class="hero-btn" type="button" data-modal-open>call back</button>
-          </div>
+          <h1 class="hero__title">Cloudbudget</h1>
+          <p class="hero__description">
+            Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of Up to
+            €4.99
+          </p>
+          <button class="hero__btn main-button" type="button" data-modal-open>call back</button>
         </div>
       </section>
 
       <!--Management section-->
       <section class="management">
-        <div class="container management-wrapper">
-          <div class="management-content">
-            <h2 class="management-title">Easy to Use Cloud Budget Management Software</h2>
-            <p class="management-description">
+        <div class="container management__wrapper">
+          <div class="management__content">
+            <h2 class="management__title">Easy to Use Cloud Budget Management Software</h2>
+            <p class="management__description">
               Our software is made so you can access and manage your budget and expenses online at
               any time from any device. It provides detailed income and expense reports with graphs
               so you can easilly see your spending patterns and budget at a glance. Read below to
               find out more.
             </p>
-            <a class="management-link" href="" target="_blank">Learn More</a>
+            <a class="management__link" href="" target="_blank">Learn More</a>
           </div>
-          <div class="management-video">
-            <button class="management-btn" type="button">
-              <svg class="btn-icon" width="18" height="18">
+          <div class="management__video">
+            <button class="management__btn management-btn" type="button">
+              <svg class="management-btn__icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-play"></use>
               </svg>
             </button>
             <img
-              class="management-picture"
+              class="management__picture"
               src="./images/video_bg.jpg"
               alt=""
               width="445"
@@ -107,54 +105,54 @@
       <!--Features section-->
       <section class="features">
         <div class="container">
-          <h2 class="features-title">Features</h2>
-          <ul class="features-list">
-            <li class="features-item">
+          <h2 class="features__title">Features</h2>
+          <ul class="features__list features-list">
+            <li class="features-list__item">
               <img
-                class="features-img"
+                class="features-list__img"
                 src="./images/bg.jpg"
                 alt="Support"
                 width="350"
                 height="250"
               />
-              <div class="feauters-overlay">
-                <h3 class="feauters-overlay__title">Supports All Currencies and Cards</h3>
-                <p class="feauters-overlay__descr">
+              <div class="features__overlay features-overlay">
+                <h3 class="features-overlay__title">Supports All Currencies and Cards</h3>
+                <p class="features-overlay__descr">
                   We support all popular currencies and is fully customizable to add
                 </p>
-                <a class="feauters-overlay__link" href="">Read More</a>
+                <a class="features-overlay__link" href="">Read More</a>
               </div>
             </li>
-            <li class="features-item">
+            <li class="features-list__item">
               <img
-                class="features-img"
+                class="features-list__img"
                 src="./images/card_2.jpg"
                 alt="Comunication"
                 width="350"
                 height="250"
               />
-              <div class="feauters-overlay">
-                <h3 class="feauters-overlay__title">Supports All Currencies and Cards</h3>
-                <p class="feauters-overlay__descr">
+              <div class="features-overlay features__overlay">
+                <h3 class="features-overlay__title">Supports All Currencies and Cards</h3>
+                <p class="features-overlay__descr">
                   We support all popular currencies and is fully customizable to add
                 </p>
-                <a class="feauters-overlay__link" href="">Read More</a>
+                <a class="features-overlay__link" href="">Read More</a>
               </div>
             </li>
-            <li class="features-item">
+            <li class="features-list__item">
               <img
-                class="features-img"
+                class="features-list__img"
                 src="./images/card_3.jpg"
                 alt="Office"
                 width="350"
                 height="250"
               />
-              <div class="feauters-overlay">
-                <h3 class="feauters-overlay__title">Supports All Currencies and Cards</h3>
-                <p class="feauters-overlay__descr">
+              <div class="features-overlay features__overlay">
+                <h3 class="features-overlay__title">Supports All Currencies and Cards</h3>
+                <p class="features-overlay__descr">
                   We support all popular currencies and is fully customizable to add
                 </p>
-                <a class="feauters-overlay__link" href="">Read More</a>
+                <a class="features-overlay__link" href="">Read More</a>
               </div>
             </li>
           </ul>
@@ -163,10 +161,10 @@
       <!--Technology section-->
       <section class="technology">
         <div class="container">
-          <h2 class="technology-title">Technology</h2>
-          <ol class="technology-list">
+          <h2 class="technology__title">Technology</h2>
+          <ol class="technology__list technology-list">
             <li class="technology-list__item">
-              <svg class="technology-icon" width="80" height="80">
+              <svg class="technology-list__icon" width="80" height="80">
                 <use href="./images/symbol-defs.svg#icon-technology-1"></use>
               </svg>
               <h3 class="technology-list__title">Cloud Storage</h3>
@@ -175,7 +173,7 @@
               </p>
             </li>
             <li class="technology-list__item">
-              <svg class="technology-icon" width="66" height="66">
+              <svg class="technology-list__icon" width="66" height="66">
                 <use href="./images/symbol-defs.svg#icon-technology-2"></use>
               </svg>
               <h3 class="technology-list__title">Secure</h3>
@@ -184,14 +182,14 @@
               </p>
             </li>
             <li class="technology-list__item">
-              <svg class="technology-icon" width="77" height="77">
+              <svg class="technology-list__icon" width="77" height="77">
                 <use href="./images/symbol-defs.svg#icon-technology-3"></use>
               </svg>
               <h3 class="technology-list__title">PDF Download</h3>
               <p class="technology-list__text">Download any of your reports in PDF format</p>
             </li>
             <li class="technology-list__item">
-              <svg class="technology-icon" width="47" height="54">
+              <svg class="technology-list__icon" width="47" height="54">
                 <use href="./images/symbol-defs.svg#icon-technology-4"></use>
               </svg>
               <h3 class="technology-list__title">CSV Download</h3>
@@ -205,10 +203,10 @@
       <!--App Download section-->
       <section class="focused">
         <div class="container">
-          <div class="focused-wrapper">
-            <div class="focused-content">
-              <h2 class="focused-title">Stay focused on saving money</h2>
-              <p class="focused-descr">
+          <div class="focused__wrapper">
+            <div class="focused__content">
+              <h2 class="focused__title">Stay focused on saving money</h2>
+              <p class="focused__descr">
                 It is important to stay focused on saving money in any way you can. We help you
                 monitor your spending habits so you can easily spot and cut any unnecessary
                 expenses. Simply join today to get started!
@@ -221,19 +219,19 @@
                     target="_blank"
                     rel="noopener norefferer"
                   ></a>
-                  <svg class="focused-icon" width="32" height="32">
+                  <svg class="focused-list__icon" width="32" height="32">
                     <use href="./images/symbol-defs.svg#icon-googleplay"></use>
                   </svg>
                 </li>
                 <li class="focused-list__item">
                   <a class="focused-list__link" href="" target="_blank" rel="noopener norefferer">
-                    <svg class="focused-icon" width="32" height="32">
+                    <svg class="focused-list__icon" width="32" height="32">
                       <use href="./images/symbol-defs.svg#icon-appstor"></use></svg
                   ></a>
                 </li>
                 <li class="focused-list__item">
                   <a class="focused-list__link" href="" target="_blank" rel="noopener norefferer">
-                    <svg class="focused-icon" width="24" height="24">
+                    <svg class="focused-list__icon" width="24" height="24">
                       <use href="./images/symbol-defs.svg#icon-windows"></use></svg
                   ></a>
                 </li>
@@ -249,34 +247,46 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container">
-        <div class="footer-wrapper">
-          <div class="address-wrapper">
-            <p class="footer-subtitle">Address</p>
-            <address class="footer-address">
-              <p>Pipang Ltd, Griva Digeni, 81-83 Jacovides Tower, 1st Floor 1090 Picosia USA</p>
+        <div class="footer__wrapper">
+          <div class="footer__inner address">
+            <p class="footer__subtitle">Address</p>
+            <address class="address__address">
+              <p class="address__descr">
+                Pipang Ltd, Griva Digeni, 81-83 Jacovides Tower, 1st Floor 1090 Picosia USA
+              </p>
             </address>
           </div>
           <!--Services-->
-          <div class="services-wrapper">
-            <p class="footer-subtitle">Services</p>
-            <ul class="footer-menu list">
-              <li><a class="footer-links footer-menu-link" href="">Overview</a></li>
-              <li><a class="footer-links footer-menu-link" href="">Features</a></li>
-              <li><a class="footer-links footer-menu-link" href="">Technology</a></li>
-              <li><a class="footer-links footer-menu-link" href="">Terms & Conditions</a></li>
-              <li><a class="footer-links footer-menu-link" href="">Privecy</a></li>
+          <div class="footer__inner services">
+            <p class="footer__subtitle">Services</p>
+            <ul class="footer-menu">
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="">Overview</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="">Features</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="">Technology</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="">Terms & Conditions</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="">Privecy</a>
+              </li>
             </ul>
           </div>
           <!--Get in touch-->
-          <div class="contact-wrapper">
-            <p class="footer-subtitle">Get in Touch</p>
-            <address class="contacts-inner">
-              <ul class="footer-contacts-list list">
-                <li class="contacts-item">
-                  <a class="footer-links contacts-link" href="tel:+18447217120">+1 844-721-7120</a>
+          <div class="footer__inner contacts">
+            <p class="footer__subtitle">Get in Touch</p>
+            <address class="contacts__inner">
+              <ul class="contacts-list">
+                <li class="contacts-list__item">
+                  <a class="contacts-list__link" href="tel:+18447217120">+1 844-721-7120</a>
                 </li>
-                <li class="contacts-item">
-                  <a class="footer-links contacts-link" href="mailto:info@cloudbudget.com"
+                <li class="contacts-list__item">
+                  <a class="contacts-list__link" href="mailto:info@cloudbudget.com"
                     >info@cloudbudget.com</a
                   >
                 </li>
@@ -301,12 +311,12 @@
             </ul>
           </div>
           <!--We Support-->
-          <div class="support-wrapper">
-            <p class="footer-subtitle">We Support</p>
-            <img class="payment-img" src="./images/secure-p-1.jpg" alt="Payment" />
+          <div class="footer__inner support">
+            <p class="footer__subtitle">We Support</p>
+            <img class="support__img" src="./images/secure-p-1.jpg" alt="Payment" />
           </div>
         </div>
-        <p class="footer-copy">Copyright 2018 CloudBudget</p>
+        <p class="footer__copy">Copyright 2018 CloudBudget</p>
       </div>
       <!--Address-->
     </footer>

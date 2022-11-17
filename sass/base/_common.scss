@@ -1,0 +1,22 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  background-color: pink;
+}
+
+body.scrol-lock {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main-button {
+  width: 160px;
+  height: 50px;
+  border-radius: 6px;
+  font-weight: 700;
+}
